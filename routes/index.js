@@ -19,7 +19,7 @@ router.post('/', function(req, res, next) {
   const { threshold, field } = req.body;
   thresholds[parseInt(field)] = parseInt(threshold);
   console.log(thresholds);
-  res.send('Success');
+  res.send(thresholds);
 });
 
 module.exports = router;
